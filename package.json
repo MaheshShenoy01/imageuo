@@ -1,0 +1,18 @@
+{
+  "name": "imageuo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^4.1.0",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/MaheshShenoy01/imageuo.git",
+  "author": "maheshs",
+  "license": "ISC"
+}
