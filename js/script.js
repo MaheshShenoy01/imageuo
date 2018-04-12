@@ -28,7 +28,7 @@ function readImage() {
                 var html =  '<div class="preview-image preview-show-' + num + '">' +
                             '<div class="image-cancel" data-no="' + num + '">x</div>' +
                             '<div class="image-zone"><img id="pro-img-' + num + '" src="' + picFile.result + '"></div>' +
-                            '<div class="tools-edit-image"><a href="javascript:void(0)" data-no="' + num + '" class="btn btn-light btn-edit-image">edit</a></div>' +
+                            '<div class="tools-edit-image"><a href="javascript:void(0)" data-no="' + num + '" class="btn btn-light btn-edit-image"  data-toggle="modal" data-target="#myModal">edit</a></div>' +
                             '</div>';
 
                 output.append(html);
