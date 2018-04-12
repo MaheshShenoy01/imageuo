@@ -5,13 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Imageuo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
 </head>
 <body>
-    
-    <!--script-->
-    <script src="script.js"></script>
-    <script src="jquery/dist/jquery.min.js"></script>
+    <div class="container">
+        <fieldset class="form-group">
+            <button  onclick="$('#pro-image').click()" class="btn btn-default">Upload Image</button>
+            <input type="file" id="pro-image" name="pro-image" style="display: none;" class="form-control" multiple>
+        </fieldset>
+        <div class="preview-images-zone">
+            
+        </div>
+    </div>       
+
+
+    <!--scripts-->
+  
+    <script
+  src="https://code.jquery.com/jquery-1.11.1.min.js"
+  integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE="
+  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   
+
+    <script src="js/script.js"></script>
 </body>
 </html>

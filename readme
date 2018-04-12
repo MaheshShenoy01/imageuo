@@ -1,0 +1,20 @@
+Imageuo app upload an image and  resize crop and print
+
+Step 1: Install the dependencies (requires node and npm)
+cmd: npm install
+
+step 2: start the application  
+cmd : npm start
+
+incase of any error report the bug
+
+replica of 
+
+https://picturesalon.com/
+
+Customer login credentials:
+username: mohammedg2t@gmail.com
+password: India@123
+
+
+image for references are attached in images folder 

@@ -4,13 +4,17 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "boostrap": "^2.0.0",
     "bootstrap": "^4.1.0",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "reload": "^2.2.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.17.3",
+    "express": "^4.16.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app/server.js"
   },
   "repository": "git+https://github.com/MaheshShenoy01/imageuo.git",
   "author": "maheshs",
