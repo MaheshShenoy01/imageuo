@@ -1,11 +1,12 @@
 .preview-images-zone {
-    width: 100%;
+    width: 26.1%;
     border: 1px solid #ddd;
     min-height: 180px;
     /* display: flex; */
-    padding: 5px 5px 0px 5px;
+    padding: 10px 5px 5px 5px;
     position: relative;
     overflow:auto;
+    border:1px dashed grey;
 }
 .preview-images-zone > .preview-image:first-child {
     height: 185px;
@@ -76,3 +77,19 @@
 .container {
     padding-top: 50px;
 }   
+
+#editImage{
+    
+    font-size:20px;
+ 
+}
+
+.modelPreview img{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin-right: 5px;
+    
+    margin-bottom: 5px;
+
+}

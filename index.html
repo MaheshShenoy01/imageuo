@@ -12,8 +12,12 @@
 <body>
     <div class="container">
         
-          
-            
+      <fieldset class="form-group">
+          <label class="btn btn-default btn-file"><a href="javascript:void(0)" onclick="$('#pro-image').click()">Upload Image</a></label>
+        <input type="file" id="pro-image" name="pro-image" style="display: none;" class="form-control" multiple>
+    </fieldset>
+    <div class="preview-images-zone">
+      </div> 
          <form >   
           <fieldset class="form-group">
            
@@ -22,39 +26,18 @@
           </label>
         </fieldset>
           </form>
-          <button type="button" class="btn btn-default btn-sm">
+          <!-- <button type="button" class="btn btn-default btn-sm">
             <span class="glyphicon glyphicon-edit"></span> Edit
           </button>
-          <select name="standardSize" class="stndPSize" changed="true">
-            <option value="">&lt;Standard Size&gt;</option>
-            <option value="10x8">10x8</option>
-            <option value="12x9">12x9 - Perfect Fit!</option>
-            <option value="14x11">14x11</option>
-            <option value="16x12">16x12 - Perfect Fit!</option>
-            <option value="20x15">20x15 - Perfect Fit!</option>
-            <option value="20x16">20x16</option>
-            <option value="24x18">24x18 - Perfect Fit!</option>
-            <option value="24x20">24x20</option>
-            <option value="28x22">28x22</option>
-            <option value="30x20">30x20</option>
-            <option value="30x24">30x24</option>
-            <option value="32x24">32x24 - Perfect Fit!</option>
-            <option value="36x24">36x24</option>
-            <option value="40x30">40x30 - Perfect Fit!</option>
-            <option value="40x32">40x32</option>
-            <option value="48x36">48x36 - Perfect Fit!</option>
-            <option value="60x40">60x40</option>
-          </select>
+          -->
+          <!-- <div class="image-crop-box">
+            This size requires cropping, reducing or stretching/shrinking your image.
+            <button>Crop Image</button>
+            <button>Do Not Crop - Reduce Image to Fit</button>
+            <button>Stretch or Shrink Image to Fit</button>
+          </div> -->
 
-
-        <div class="preview-images-zone" id="preview">
-            <div class="image-crop-box">
-              This size requires cropping, reducing or stretching/shrinking your image.
-              <button>Crop Image</button>
-              <button>Do Not Crop - Reduce Image to Fit</button>
-              <button>Stretch or Shrink Image to Fit</button>
-            </div>
-        </div>
+       
     </div>       
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
@@ -63,7 +46,7 @@
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal">&times;</button>
       <h4 class="modal-title">Modal Header</h4>
-      <div class="dropdown">
+      <!-- <div class="dropdown">
         <button class="btn btn-deault dropdown-toggle" type="button" data-toggle="dropdown">Standard Size
         <span class="caret"></span></button>
     <ul class="dropdown-menu">
@@ -84,16 +67,42 @@
         <li><a href="#">36x48</a></li>
         <li><a href="#">40x60</a></li>
       </ul>
-    </div>
+    </div> -->
+    <select name="standardSize" class="stndPSize" changed="true">
+        <option value="">&lt;Standard Size&gt;</option>
+        <option value="10x8">10x8</option>
+        <option value="12x9">12x9 - Perfect Fit!</option>
+        <option value="14x11">14x11</option>
+        <option value="16x12">16x12 - Perfect Fit!</option>
+        <option value="20x15">20x15 - Perfect Fit!</option>
+        <option value="20x16">20x16</option>
+        <option value="24x18">24x18 - Perfect Fit!</option>
+        <option value="24x20">24x20</option>
+        <option value="28x22">28x22</option>
+        <option value="30x20">30x20</option>
+        <option value="30x24">30x24</option>
+        <option value="32x24">32x24 - Perfect Fit!</option>
+        <option value="36x24">36x24</option>
+        <option value="40x30">40x30 - Perfect Fit!</option>
+        <option value="40x32">40x32</option>
+        <option value="48x36">48x36 - Perfect Fit!</option>
+        <option value="60x40">60x40</option>
+      </select>
 
     </div>
     <div class="modal-body">
-      <p>Some text in the modal.</p>
-      
-      <div class="preview-images-zone">
-            
-    </div>
     
+      
+      <div class="modelPreview"  id="preview" >
+          <div class="image-zone">
+          </div>
+    </div>
+    <div class="imageSizeDetails">
+      <p>Image size in inches</p>
+      <span>Width x</span><span> Height:</span><p class="imgWidth"></p>
+      <p class="imgHeight"></p>   
+      </ul>
+    </div>
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
