@@ -25,10 +25,35 @@
           <button type="button" class="btn btn-default btn-sm">
             <span class="glyphicon glyphicon-edit"></span> Edit
           </button>
+          <select name="standardSize" class="stndPSize" changed="true">
+            <option value="">&lt;Standard Size&gt;</option>
+            <option value="10x8">10x8</option>
+            <option value="12x9">12x9 - Perfect Fit!</option>
+            <option value="14x11">14x11</option>
+            <option value="16x12">16x12 - Perfect Fit!</option>
+            <option value="20x15">20x15 - Perfect Fit!</option>
+            <option value="20x16">20x16</option>
+            <option value="24x18">24x18 - Perfect Fit!</option>
+            <option value="24x20">24x20</option>
+            <option value="28x22">28x22</option>
+            <option value="30x20">30x20</option>
+            <option value="30x24">30x24</option>
+            <option value="32x24">32x24 - Perfect Fit!</option>
+            <option value="36x24">36x24</option>
+            <option value="40x30">40x30 - Perfect Fit!</option>
+            <option value="40x32">40x32</option>
+            <option value="48x36">48x36 - Perfect Fit!</option>
+            <option value="60x40">60x40</option>
+          </select>
 
 
         <div class="preview-images-zone" id="preview">
-            
+            <div class="image-crop-box">
+              This size requires cropping, reducing or stretching/shrinking your image.
+              <button>Crop Image</button>
+              <button>Do Not Crop - Reduce Image to Fit</button>
+              <button>Stretch or Shrink Image to Fit</button>
+            </div>
         </div>
     </div>       
     <div class="modal fade" id="myModal" role="dialog">

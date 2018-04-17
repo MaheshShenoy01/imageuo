@@ -58,6 +58,16 @@
 .preview-image:hover > .image-cancel {
     display: block;
 }
+
+.image-crop-box {
+    display: block;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #000000;
+    width: 185px;
+    height: 185px;
+    z-index: 9;
+}
 .ui-sortable-helper {
     width: 90px !important;
     height: 90px !important;
