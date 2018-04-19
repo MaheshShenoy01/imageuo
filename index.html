@@ -7,6 +7,8 @@
     <title>Imageuo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+ 
+    <link  href="css/cropper.css" rel="stylesheet">
 
 </head>
 <body>
@@ -37,9 +39,10 @@
  <!-- Modal content-->
  <div class="modal-content">
     <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
+     
       <a href="#" data-toggle="tooltip" title="Picture Salon uses minimum dpi(dots per inch) of 72 to determine the largest recommended size. For highest quality, we recommend 300dpi"><span class="glyphicon glyphicon-info-sign"></span></a>
-      <h4 class="modal-title">Image</h4>
+      <h4 class="modal-title"></h4>
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
       <!-- <div class="dropdown">
         <button class="btn btn-deault dropdown-toggle" type="button" data-toggle="dropdown">Standard Size
         <span class="caret"></span></button>
@@ -62,34 +65,18 @@
         <li><a href="#">40x60</a></li>
       </ul>
     </div> -->
-    <select name="standardSize"  changed="true" class="selectpicker">
-        <option value="">&lt;Standard Size&gt;</option>
-        <option value="10x8">10x8</option>
-        <option value="12x9">12x9 - Perfect Fit!</option>
-        <option value="14x11">14x11</option>
-        <option value="16x12">16x12 - Perfect Fit!</option>
-        <option value="20x15">20x15 - Perfect Fit!</option>
-        <option value="20x16">20x16</option>
-        <option value="24x18">24x18 - Perfect Fit!</option>
-        <option value="24x20">24x20</option>
-        <option value="28x22">28x22</option>
-        <option value="30x20">30x20</option>
-        <option value="30x24">30x24</option>
-        <option value="32x24">32x24 - Perfect Fit!</option>
-        <option value="36x24">36x24</option>
-        <option value="40x30">40x30 - Perfect Fit!</option>
-        <option value="40x32">40x32</option>
-        <option value="48x36">48x36 - Perfect Fit!</option>
-        <option value="60x40">60x40</option>
-      </select>
+    
 
     </div>
     <div class="modal-body">
-    
+      
       
       <div class="modelPreview"  id="preview" >
+          
+           
           <div class="image-zone">
           </div>
+        
     </div>
     <div class="imageSizeDetails">
       <p>Image size in inches</p>
@@ -97,10 +84,10 @@
       <p class="imgHeight"></p>   
       </ul>
     </div>
-    </div>3
+    </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      <a href="#" data-toggle="tooltip" title="All images in our application is getting converted with 76 dpi"><span class="glyphicon glyphicon-info-sign"></span></a>
+      
     </div>
   </div>
 </div>
@@ -116,6 +103,8 @@
    
    <script src="js/load-image.all.min.js"></script>
     
+   <script src="js/cropper.js"></script>
+   <script src="js/jquery-cropper.js"></script>
     <script src="js/script.js"></script>
    
 </body>

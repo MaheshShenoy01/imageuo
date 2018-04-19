@@ -12,8 +12,11 @@ $(document).ready(function() {
     $(document).on('click', '.preview-image', function() {
         var height =$(this).find('img').attr('data-width');
         var width  =$(this).find('img').attr('data-height');
+        var imgName = $(this).find('img').attr('data-name')
         $('.imgWidth').html(height+" x "+width)
-         var thatImage= $(this).find('img').clone();
+        $('.modal-title').html(imgName)
+         var thatImage= $(this).find('img').parent().clone();
+         //console.log(thatImage.wrap( "<div class='page-zone'></div>" ))
          $('.modelPreview .preview-image').remove();
          $(".modelPreview").html(thatImage);
     });
@@ -32,21 +35,23 @@ function readImage() {
 
         for (let i = 0; i < files.length; i++) {
             var file = files[i];
+           
             if (!file.type.match('image')) continue;
            
            
             
             var picReader = new FileReader();
+          
             picReader.onload = (function(theFile) { 
                 var image = new Image();
                 image.src = theFile.target.result;
-            
+              
                 image.onload = function() {
-                 
-                  obj1= convertToInches(this.width,this.height,76)
+                
+                  obj1= convertToInches(this.width,this.height,72)
                    var html =  '<div class="preview-image preview-show-' + num + '">' +
                             '<div class="image-cancel" data-no="' + num + '">x</div>' +
-                            '<div class="image-zone"><img id="pro-img-' + num + '" src="' + image.src  + '" data-width="' + parseInt(obj1.wInch) + '" data-height="' + parseInt(obj1.hInch) + '"></div>' +
+                            '<div class="image-zone"><img id="pro-img-' + num + '" src="' + image.src  + '" data-width="' + parseInt(obj1.wInch) + '" data-height="' + parseInt(obj1.hInch) + '" data-name="' + file.name + '"></div>' +
                             '<div class="tools-edit-image" data-toggle="modal" data-target="#myModal"><a href="javascript:void(0)" id="editImage" data-no="' + num + '" class="btn btn-light btn-edit-image"><span class="glyphicon glyphicon-edit"></span></a></div>' +
                             '</div>';
                      output.append(html);

@@ -93,3 +93,23 @@
     margin-bottom: 5px;
 
 }
+
+.modal-header,.modal-body{
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-header .close{
+    flex:1;
+    text-align: right;
+}
+
+ .modal-header a {
+    margin-right:2%;
+} .modal-header h3{
+    margin-left:2%;
+}
+
+.page-zone{
+    border:5px solid black;
+}
